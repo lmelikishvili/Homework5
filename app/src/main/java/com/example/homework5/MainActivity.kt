@@ -1,5 +1,6 @@
 package com.example.homework5
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.homework5.databinding.ActivityLoginBinding
@@ -16,13 +17,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
         binding.btnRegister.setOnClickListener {
-            setContentView(R.layout.activity_register)
+            val intent = Intent(applicationContext,RegisterActivity::class.java)
+            startActivity(intent)
         }
 
         binding.btnLogin.setOnClickListener {
-            setContentView(R.layout.activity_login)
+            val intent = Intent(applicationContext,LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }
