@@ -7,8 +7,6 @@
     tools:context=".MainActivity">
 
 
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -21,7 +19,7 @@
         app:srcCompat="@drawable/grouplogo" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnLogin"
         android:layout_width="167dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
@@ -31,7 +29,7 @@
         app:srcCompat="@drawable/button_login" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnRegister"
         android:layout_width="167dp"
         android:layout_height="52dp"
         android:layout_marginStart="208dp"
