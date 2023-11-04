@@ -27,35 +27,70 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow" />
 
-    <EditText
-        android:id="@+id/etEmail"
+    <LinearLayout
+        android:id="@+id/linearLayoutEmail"
         android:layout_width="343dp"
         android:layout_height="52dp"
         android:layout_marginTop="176dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
         android:background="@drawable/input_rect"
-        android:text=""
-        android:hint="Email"
+        android:gravity="end"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewEmail"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            app:srcCompat="@drawable/email_icon"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="488dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="290dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+    </LinearLayout>
 
 
-
-    <EditText
-        android:id="@+id/etPassw"
+    <LinearLayout
         android:layout_width="343dp"
         android:layout_height="52dp"
         android:layout_marginTop="244dp"
         android:background="@drawable/input_rect"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text=""
-        android:hint="Password"
+        android:orientation="horizontal"
+        android:gravity="end"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageViewPass"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            app:srcCompat="@drawable/pass_icon3" />
+
+
+        <EditText
+            android:id="@+id/etPassw"
+            android:layout_width="290dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="" />
+
+    </LinearLayout>
+
 
     <ImageButton
         android:id="@+id/btn_next"
@@ -66,5 +101,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/button_next" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,19 +27,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow" />
 
-    <EditText
-        android:id="@+id/etUsername"
+    <LinearLayout
+        android:id="@+id/linearLayoutEmail"
         android:layout_width="343dp"
         android:layout_height="52dp"
         android:layout_marginTop="176dp"
-        android:ems="10"
-        android:inputType="text"
         android:background="@drawable/input_rect"
-        android:text=""
-        android:hint="Username"
+        android:gravity="end"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewEmail"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            app:srcCompat="@drawable/user_icon2"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="488dp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="290dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+    </LinearLayout>
 
 
     <ImageButton
