@@ -28,7 +28,7 @@
         app:srcCompat="@drawable/arrow" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etUsername"
         android:layout_width="343dp"
         android:layout_height="52dp"
         android:layout_marginTop="176dp"
@@ -36,6 +36,7 @@
         android:inputType="text"
         android:background="@drawable/input_rect"
         android:text=""
+        android:hint="Username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
